@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <!-- this is how we can use react using cdn links  -->
+     <!-- cross origin ek web security concept hai jo webbrowser ko ek origin domain se dusre domain pe resourse acess karne ki limit set krata hai  -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script>
+        let heading = React.createElement("h1",{},"hello world from react !");
+        let root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+
+
+    </script>
+</body>
+</html>
