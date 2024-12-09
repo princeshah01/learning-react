@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "nothing to test"
+    "test": "jest"
   },
   "author": "prince",
   "license": "ISC",
-  "description": ""
+  "description": "this is first react app by prince",
+  "dependencies": {
+    "parcel": "^2.13.2"
+  }
 }
