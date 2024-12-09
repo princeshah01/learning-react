@@ -1,0 +1,11 @@
+{
+  "name": "day-2-creating-react-app-using-npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "nothing to test"
+  },
+  "author": "prince",
+  "license": "ISC",
+  "description": ""
+}

@@ -7,16 +7,33 @@
 </head>
 <body>
     <div id="root">
-
+      
     </div>
+    <div id="root">
+        <div id="root"></div>
+    </div>
+
     <!-- this is how we can use react using cdn links  -->
      <!-- cross origin ek web security concept hai jo webbrowser ko ek origin domain se dusre domain pe resourse acess karne ki limit set krata hai  -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script>
-        let heading = React.createElement("h1",{},"hello world from react !");
+        // let heading = React.createElement("h1",{},"hello world from react !");
+        // let root = ReactDOM.createRoot(document.getElementById("root"));
+        // root.render(heading);
+        // let child = React.createElement("div",{id:"child"},"this is child");
+        // let heading = React.createElement("h1",{id:"heading"},"this is heading");
+        // let parent = React.createElement("div",{id:"container"},[heading, child]);
+        // let root = ReactDOM.createRoot(document.getElementById("root"));
+        // root.render(parent);
+
+        let child1 = React.createElement("div",{id:"child-1" , key:"c-1"},[React.createElement("h1",{ key:"c-2"},"this is heading 1 of child 1 "), React.createElement("h2",{id:"heading-2", key:"c-3"},"this is heading 2 of child 1 ")]);
+        let child2 = React.createElement("div",{id:"child-2", key:"c-4"},[React.createElement("h1",{ key:"c-5"},"this is heading 1 of child 2 "), React.createElement("h2",{id:"heading-2", key:"c-6"},"this is heading 2 of child 2 ")]);
+        // we use keys for efficient dom rendering 
+
+        let parent = React.createElement("div",{id:"parent-Div"},[child1 , child2]);
         let root = ReactDOM.createRoot(document.getElementById("root"));
-        root.render(heading);
+        root.render(parent);
 
 
     </script>
