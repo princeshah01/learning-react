@@ -7,8 +7,8 @@
   },
   "author": "prince",
   "license": "ISC",
-  "description": "this is first react app by prince",
-  "dependencies": {
+  "description": "",
+  "devDependencies": {
     "parcel": "^2.13.2"
   }
 }
