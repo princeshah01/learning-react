@@ -1,0 +1,32 @@
+{
+  "name": "khan_s_kitchen",
+  "version": "1.0.0",
+  "description": "This is a web app for khan's kitchen ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princeshah01/Khan-s-Kitchen.git"
+  },
+  "keywords": [
+    "khan",
+    "kitchen",
+    "food",
+    "biryani"
+  ],
+  "author": "Prince",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princeshah01/Khan-s-Kitchen/issues"
+  },
+  "homepage": "https://github.com/princeshah01/Khan-s-Kitchen#readme",
+  "devDependencies": {
+    "parcel": "^2.13.2"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
